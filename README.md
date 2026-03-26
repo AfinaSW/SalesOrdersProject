@@ -13,12 +13,14 @@ SalesOrdersProject/
 ```
 
 📝 Dataset Overview
+
 🧾 Orders & Customers: Track order dates, shipping dates, shipping modes, customer names, segments, and geographic data.
 📦 Products & Sales: Includes product categories, sub-categories, quantities, sales, discounts, profits, and shipping costs.
 ⏱️ Performance Metrics: Calculated delivery_days for shipping efficiency; region converted to text for categorical analysis.
 ⭐ Prioritization: Order priority levels (High, Medium, Low, Critical) included.
 
 📋 Schema Snapshot
+
 Column	Type	Description
 | Column           | Type          | Description                       |
 | ---------------- | ------------- | --------------------------------- |
@@ -49,12 +51,14 @@ Column	Type	Description
 💡 Tip: Use this table as a reference when writing SQL queries or analyzing the dataset.
 
 ✨ Key Features
+
 💰 Refined Data Types: Financial fields (sales, profit, discount, shipping_cost) stored as DECIMAL for precision.
 📦 Calculated Fields: delivery_days for logistics and shipping efficiency analysis.
 🗂️ Categorical Consistency: region converted to text for easier grouping, filtering, and visualization.
 📊 Analytics Ready: Perfect for sales trends, customer segmentation, product performance, and shipping analysis.
 
 🚀 Usage
+
 Load in MySQL Workbench to query and analyze orders.
 Export to Python/R for data science workflows.
 Build dashboards or KPIs for business insights.
