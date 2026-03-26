@@ -72,3 +72,9 @@ Export to Python/R for data science workflows
 Build dashboards or KPIs for business insights.
 
 💡 Tip: Keep the CSV and SQL files in the repository to allow others to reproduce your analysis easily.
+
+📚 Sources
+
+- Original dataset: [Kaggle](https://www.kaggle.com/datasets/thuandao/superstore-sales-analytics)
+
+
