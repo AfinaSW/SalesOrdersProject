@@ -4,11 +4,13 @@ A refined transactional dataset containing detailed order, customer, product, an
 
 💡 Tip: Place this README.md in the root of your GitHub repository to make it display automatically.
 
+```text
 SalesOrdersProject/
 │
-├─ README.md                 ← Project description (this file)
-├─ sales_orders.csv          ← Original dataset
-└─ schema.sql                ← Table schema with data types
+├─ README.md ← Project description (this file)
+├─ sales_orders.csv ← Original dataset
+└─ schema.sql ← Table schema with data types
+```
 
 📝 Dataset Overview
 🧾 Orders & Customers: Track order dates, shipping dates, shipping modes, customer names, segments, and geographic data.
