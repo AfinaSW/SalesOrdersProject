@@ -28,8 +28,8 @@ Column	Type	Description
 | Column           | Type          | Description                       |
 | ---------------- | ------------- | --------------------------------- |
 | `order_id`       | TEXT          | Unique order identifier           |
-| `order_date`     | DATETIME      | Date order was placed             |
-| `ship_date`      | DATETIME      | Date order was shipped            |
+| `order_date`     | DATE          | Date order was placed             |
+| `ship_date`      | DATE          | Date order was shipped            |
 | `ship_mode`      | TEXT          | Shipping method                   |
 | `customer_name`  | TEXT          | Customer name                     |
 | `segment`        | TEXT          | Customer segment                  |
