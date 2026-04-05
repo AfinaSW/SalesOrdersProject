@@ -1,26 +1,24 @@
-/*
--- Query: DESCRIBE superstoreorders
--- Date: 2026-03-26 12:27
-*/
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('order_id','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('order_date','datetime','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('ship_date','datetime','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('ship_mode','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('customer_name','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('segment','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('state','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('country','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('market','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('region','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('product_id','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('category','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('sub_category','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('product_name','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('sales','decimal(10,2)','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('quantity','int','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('discount','decimal(5,2)','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('profit','decimal(10,2)','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('shipping_cost','decimal(10,2)','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('order_priority','text','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('year','int','YES','',NULL,'');
-INSERT INTO `` (`Field`,`Type`,`Null`,`Key`,`Default`,`Extra`) VALUES ('delivery_days','int','YES','',NULL,'');
+CREATE TABLE `salesordertransformedset_schema` (
+   `order_id` text,
+   `order_date` datetime DEFAULT NULL,
+   `ship_date` datetime DEFAULT NULL,
+   `ship_mode` text,
+   `customer_name` text,
+   `segment` text,
+   `state` text,
+   `country` text,
+   `market` text,
+   `region` text,
+   `product_id` text,
+   `category` text,
+   `sub_category` text,
+   `product_name` text,
+   `sales` decimal(10,2) DEFAULT NULL,
+   `quantity` int DEFAULT NULL,
+   `discount` decimal(3,2) DEFAULT NULL,
+   `profit` decimal(10,2) DEFAULT NULL,
+   `shipping_cost` decimal(10,2) DEFAULT NULL,
+   `order_priority` text,
+   `year` int DEFAULT NULL,
+   `delivery_days` int DEFAULT NULL
+ ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
