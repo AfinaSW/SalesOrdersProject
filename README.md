@@ -43,7 +43,7 @@ Column	Type	Description
 | `product_name`   | TEXT          | Full product name                 |
 | `sales`          | DECIMAL(10,2) | Sales amount                      |
 | `quantity`       | INT           | Number of items ordered           |
-| `discount`       | DECIMAL(5,2)  | Discount applied                  |
+| `discount`       | DECIMAL(3,2)  | Discount applied                  |
 | `profit`         | DECIMAL(10,2) | Profit earned                     |
 | `shipping_cost`  | DECIMAL(10,2) | Shipping cost                     |
 | `order_priority` | TEXT          | Order priority                    |
