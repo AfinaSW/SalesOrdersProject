@@ -1,7 +1,7 @@
 CREATE TABLE `salesordertransformedset_schema` (
    `order_id` text,
-   `order_date` datetime DEFAULT NULL,
-   `ship_date` datetime DEFAULT NULL,
+   `order_date` date DEFAULT NULL,
+   `ship_date` date DEFAULT NULL,
    `ship_mode` text,
    `customer_name` text,
    `segment` text,
