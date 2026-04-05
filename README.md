@@ -76,5 +76,7 @@ Build dashboards or KPIs for business insights.
 📚 Sources
 
 - Original dataset: [Kaggle](https://www.kaggle.com/datasets/thuandao/superstore-sales-analytics)
+  
+- Please refer to the Kaggle page for license and usage terms. Use responsibly.
 
 
