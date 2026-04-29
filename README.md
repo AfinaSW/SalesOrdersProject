@@ -1,10 +1,27 @@
-📊 Sales Orders Dataset
+📊 E-commerce Profitability Analysis
 
-A refined transactional dataset containing detailed order, customer, product, and shipping information. Prepared in MySQL Workbench, ready for analytics, visualization, and business intelligence workflows.
+📌 Overview
 
-💡 Tip: Place this README.md in the root of your GitHub repository to make it display automatically.
+This project analyzes an e-commerce dataset to identify the key drivers of low profitability despite strong sales performance.
 
-```text
+The analysis focuses on how discount strategies, shipping costs, and pricing decisions impact overall margins and lead to loss-making transactions.
+
+🎯 Business Problem
+
+The company generates high sales volume but operates at very low profit margins, with a significant share of transactions becoming unprofitable.
+
+The goal was to identify:
+
+Why profitable sales turn into losses
+Which factors drive unprofitability
+How to optimize pricing and discount strategies
+
+🧹 Data Preparation
+
+Data preparation was performed in MySQL, where raw transactional data was cleaned, structured, and enhanced with calculated fields (e.g., delivery time).
+The processed dataset was then used in Power BI to build analytical models, KPIs, and interactive dashboards.
+
+
 SalesOrdersProject/
 │
 ├─ README.md ← Project description (this file)
@@ -12,66 +29,54 @@ SalesOrdersProject/
 └─ schema.sql ← Table schema with data types (after data clining)
 ```
 
-📝 Dataset Overview
+🧠 Key Insights
 
-🧾 Orders & Customers: Track order dates, shipping dates, shipping modes, customer names, segments, and geographic data.
+🔴 1. Discounts are the primary driver of losses
+Profitability turns negative beyond ~20% discount
+Over $10K in losses driven by excessive discounting
+Discounts often exceed sustainable (break-even) levels
 
-📦 Products & Sales: Includes product categories, sub-categories, quantities, sales, discounts, profits, and shipping costs.
+🚚 2. Shipping costs significantly reduce profitability
+Reduce margins by 11 percentage points
+Turn ~40% of orders unprofitable
+Higher shipping costs strongly increase loss risk
 
-⏱️ Performance Metrics: Calculated delivery_days for shipping efficiency; region converted to text for categorical analysis.
+⚠️ 3. Two distinct loss drivers identified
+1. Excessive discounting
+Discounts exceed break-even threshold
+Directly turn profitable orders into losses
+2. Structural pricing issues
+~15% of products are unprofitable even at 0% discount
+Indicates pricing or cost structure problems
 
-⭐ Prioritization: Order priority levels (High, Medium, Low, Critical) included.
+🌍 4. Losses are concentrated
+Specific countries and product categories contribute disproportionately to losses
 
-📋 Schema Snapshot
+💡 Solution & Recommendations
 
-Column	Type	Description
-| Column           | Type          | Description                       |
-| ---------------- | ------------- | --------------------------------- |
-| `order_id`       | TEXT          | Unique order identifier           |
-| `order_date`     | DATE          | Date order was placed             |
-| `ship_date`      | DATE          | Date order was shipped            |
-| `ship_mode`      | TEXT          | Shipping method                   |
-| `customer_name`  | TEXT          | Customer name                     |
-| `segment`        | TEXT          | Customer segment                  |
-| `state`          | TEXT          | Customer state                    |
-| `country`        | TEXT          | Customer country                  |
-| `market`         | TEXT          | Market region                     |
-| `region`         | TEXT          | Regional classification           |
-| `product_id`     | TEXT          | Unique product identifier         |
-| `category`       | TEXT          | Product category                  |
-| `sub_category`   | TEXT          | Product sub-category              |
-| `product_name`   | TEXT          | Full product name                 |
-| `sales`          | DECIMAL(10,2) | Sales amount                      |
-| `quantity`       | INT           | Number of items ordered           |
-| `discount`       | DECIMAL(3,2)  | Discount applied                  |
-| `profit`         | DECIMAL(10,2) | Profit earned                     |
-| `shipping_cost`  | DECIMAL(10,2) | Shipping cost                     |
-| `order_priority` | TEXT          | Order priority                    |
-| `year`           | INT           | Order year                        |
-| `delivery_days`  | INT           | Days between order and ship dates |
+A differentiated strategy is required:
+
+✅ Optimize discount policies
+Reduce discounts above break-even levels
+Introduce discount thresholds
+
+⚠️ Adjust pricing for structurally unprofitable products
+Increase prices where feasible
+Reassess cost structure
+
+📌 Align pricing with margins
+Avoid applying high discounts to low-margin products
+
+📊 Dashboard Overview
+
+The project includes a multi-page Power BI dashboard:
+
+1. Business Performance Overview
+Sales, profit, margin, and loss ratios
+Identifies overall profitability issues
 
 
-💡 Tip: Use this table as a reference when writing SQL queries or analyzing the dataset.
 
-✨ Key Features
-
-💰 Refined Data Types: Financial fields (sales, profit, discount, shipping_cost) stored as DECIMAL for precision.
-
-📦 Calculated Fields: delivery_days for logistics and shipping efficiency analysis.
-
-🗂️ Categorical Consistency: region converted to text for easier grouping, filtering, and visualization.
-
-📊 Analytics Ready: Perfect for sales trends, customer segmentation, product performance, and shipping analysis.
-
-🚀 Usage
-
-Load in MySQL Workbench to query and analyze orders.
-
-Export to Python/R for data science workflows
-
-Build dashboards or KPIs for business insights.
-
-💡 Tip: Keep the CSV and SQL files in the repository to allow others to reproduce your analysis easily.
 
 📚 Sources
 
