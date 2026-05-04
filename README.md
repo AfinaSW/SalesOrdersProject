@@ -2,8 +2,7 @@
 
 📌 Overview
 
-This project analyzes an e-commerce dataset to identify why strong sales performance does not translate into profitability.
-
+This project analyzes an e-commerce dataset to understand why strong sales performance does not translate into profitability.
 The analysis focuses on how discount strategies, shipping costs, and pricing decisions drive losses and reduce margins.
 
 🎯 Business Problem
@@ -94,6 +93,7 @@ Total Sales, Total Profit, and Profit Margin
 Share of loss-making products and orders
 Sales and profit distribution across categories and regions
 👉 Identifies the core issue: strong sales performance combined with weak profitability
+![Overview](images/overview.PNG)
 
 2. Discounts vs Profitability
 
@@ -103,6 +103,7 @@ Profit trends across discount ranges
 Break-even discount threshold (~20%)
 Identification of loss-making discount levels
 👉 Reveals that excessive discounting is a key driver of losses
+![Discount](images/discount.PNG)
 
 3. Shipping Cost Impact
 
@@ -112,6 +113,7 @@ Relationship between shipping cost and profit (scatter analysis)
 Profitability by shipping mode and region
 Comparison of delivery time vs profit
 👉 Shows that shipping costs significantly reduce margins and increase loss risk
+![Shipping](images/shipping.PNG)
 
 4. Pricing Optimization
 
@@ -121,7 +123,7 @@ Break-even discount calculation
 Discount gap analysis
 Product-level recommendations (reduce discount vs increase price)
 👉 Translates analysis into practical business actions
-
+[Pricing](images/pricing.PNG)
 
 📐 Key DAX Calculations
 
@@ -141,10 +143,8 @@ Required Sales =
 SUM('DATASET'[sales]) 
 - SUM('DATASET'[profit]) 
 + SUM('DATASET'[shipping_cost])
-)
-  
 
-  📊 Base Sales (before discount)
+📊 Base Sales (before discount)
 Base Sales =
 SUMX(
     'DATASET',
