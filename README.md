@@ -20,7 +20,6 @@ Develop actionable pricing recommendations
 Data preparation was performed in MySQL, where raw transactional data was cleaned, structured, and enhanced with calculated fields (e.g., delivery time).
 The processed dataset was then used in Power BI to build analytical models, KPIs, and interactive dashboards.
 
-SalesOrdersProject/
 ```bash
 SalesOrdersProject/
 │
