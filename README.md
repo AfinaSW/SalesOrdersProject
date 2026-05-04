@@ -2,19 +2,19 @@
 
 📌 Overview
 
-This project analyzes an e-commerce dataset to identify the key drivers of low profitability despite strong sales performance.
+This project analyzes an e-commerce dataset to identify why strong sales performance does not translate into profitability.
 
-The analysis focuses on how discount strategies, shipping costs, and pricing decisions impact overall margins and lead to loss-making transactions.
+The analysis focuses on how discount strategies, shipping costs, and pricing decisions drive losses and reduce margins.
 
 🎯 Business Problem
 
-The company generates high sales volume but operates at very low profit margins, with a significant share of transactions becoming unprofitable.
+Despite high sales volume, the business operates at low profitability, with a large share of transactions becoming unprofitable.
 
-The goal was to identify:
+The objective was to:
 
-Why profitable sales turn into losses
-Which factors drive unprofitability
-How to optimize pricing and discount strategies
+Identify root causes of losses
+Quantify the impact of discounts and shipping
+Develop actionable pricing recommendations
 
 🧹 Data Preparation
 
