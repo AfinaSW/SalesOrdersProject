@@ -132,7 +132,7 @@ Discount gap analysis
 Product-level recommendations (reduce discount vs increase price)
 👉 Translates analysis into practical business actions
 
-[Pricing](images/pricing.PNG)
+![Pricing](images/pricing.PNG)
 
 📐 Key DAX Calculations
 
