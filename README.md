@@ -137,10 +137,12 @@ Product-level recommendations (reduce discount vs increase price)
 📐 Key DAX Calculations
 
 💰 Profit After Shipping
+
 Profit After Shipping =
 SUM('DATASET'[profit]) - SUM('DATASET'[shipping_cost])
 
 📊 Profit Margin After Shipping
+
 Profit Margin After Shipping =
 DIVIDE(
     SUM('DATASET'[profit]) - SUM('DATASET'[shipping_cost]),
@@ -148,12 +150,14 @@ DIVIDE(
 )
 
 📉 Required Sales (Break-even)
+
 Required Sales =
 SUM('DATASET'[sales]) 
 - SUM('DATASET'[profit]) 
 + SUM('DATASET'[shipping_cost])
 
 📊 Base Sales (before discount)
+
 Base Sales =
 SUMX(
     'DATASET',
@@ -161,6 +165,7 @@ SUMX(
 )
 
   🎯 Max Discount (Break-even)
+
 Max Discount (Break-even) =
 1 - DIVIDE(
     [Required Sales],
@@ -168,10 +173,12 @@ Max Discount (Break-even) =
 )
 
 ⚠️ Discount Gap
+
 Discount Gap =
 AVERAGE('DATASET'[discount]) - [Max Discount (Break-even)]
 
 🧠 Recommendation Logic
+
 Recommendation = 
 SWITCH(
     TRUE(),
@@ -182,6 +189,7 @@ SWITCH(
 )
 
 📁 Analytical Output
+
 Optimization.csv
 Contains product-level analysis including:
 Profit after shipping
@@ -190,6 +198,7 @@ Discount gap
 Pricing recommendations
 
 This output can be directly used for business decision-making.
+
 📚 Sources
 
 - Original dataset: [Kaggle](https://www.kaggle.com/datasets/thuandao/superstore-sales-analytics)
