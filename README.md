@@ -21,6 +21,8 @@ Data preparation was performed in MySQL, where raw transactional data was cleane
 The processed dataset was then used in Power BI to build analytical models, KPIs, and interactive dashboards.
 
 SalesOrdersProject/
+```bash
+SalesOrdersProject/
 │
 ├── README.md
 │
@@ -41,6 +43,7 @@ SalesOrdersProject/
 │   ├── discount.png
 │   ├── shipping.png
 │   └── pricing.png
+```
 
 🧠 Key Insights
 
