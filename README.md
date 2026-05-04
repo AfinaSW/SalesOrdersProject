@@ -185,7 +185,9 @@ Recommendation =
 SWITCH(
     TRUE(),
     [Max Discount (Break-even)] < 0, "Increase price",
+    
     [Discount Gap] > 0.1, "Reduce discount",
+    
     [Discount Gap] > 0, "Adjust discount",
     "OK"
 )
