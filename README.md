@@ -151,10 +151,12 @@ DIVIDE(
 
 📉 Required Sales (Break-even)
 
+```DAX
 Required Sales =
 SUM('DATASET'[sales]) 
 - SUM('DATASET'[profit]) 
 + SUM('DATASET'[shipping_cost])
+```
 
 📊 Base Sales (before discount)
 
