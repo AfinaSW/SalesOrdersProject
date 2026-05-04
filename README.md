@@ -94,6 +94,7 @@ Provides a high-level view of business performance:
 Total Sales, Total Profit, and Profit Margin
 Share of loss-making products and orders
 Sales and profit distribution across categories and regions
+
 👉 Identifies the core issue: strong sales performance combined with weak profitability
 
 ![Overview](images/overview.PNG)
@@ -105,6 +106,7 @@ Analyzes the impact of discounting on profit:
 Profit trends across discount ranges
 Break-even discount threshold (~20%)
 Identification of loss-making discount levels
+
 👉 Reveals that excessive discounting is a key driver of losses
 
 ![Discount](images/discount.PNG)
@@ -116,6 +118,7 @@ Evaluates how shipping affects profitability:
 Relationship between shipping cost and profit (scatter analysis)
 Profitability by shipping mode and region
 Comparison of delivery time vs profit
+
 👉 Shows that shipping costs significantly reduce margins and increase loss risk
 
 ![Shipping](images/shipping.PNG)
