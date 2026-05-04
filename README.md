@@ -184,6 +184,7 @@ AVERAGE('DATASET'[discount]) - [Max Discount (Break-even)]
 Recommendation = 
 SWITCH(
     TRUE(),
+    
     [Max Discount (Break-even)] < 0, "Increase price",
     
     [Discount Gap] > 0.1, "Reduce discount",
